@@ -3,7 +3,8 @@
 *,
 *::before,
 *::after {
-  margin: 0; /* Additional */
+  font-family: 'Sora', sans-serif; /* Additional */
+  margin: 0; 
   padding: 0;
   box-sizing: border-box;
 }
