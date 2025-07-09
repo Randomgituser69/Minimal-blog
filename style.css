@@ -3,8 +3,8 @@
 *,
 *::before,
 *::after {
-  font-family: 'Sora', sans-serif; /* Additional */
-  margin: 0; 
+  font-family: "Sora", sans-serif; /* Additional */
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -17,14 +17,22 @@ html {
 }
 
 /* Remove default margin in favour of better control in authored CSS */
-body, h1, h2, h3, h4, p,
-figure, blockquote, dl, dd {
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
   margin-block-end: 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -36,14 +44,21 @@ body {
 }
 
 /* Set shorter line heights on headings and interactive elements */
-h1, h2, h3, h4,
-button, input, label {
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
   line-height: 1.1;
 }
 
 /* Balance text wrapping on headings */
-h1, h2,
-h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   text-wrap: balance;
 }
 
@@ -61,8 +76,10 @@ picture {
 }
 
 /* Inherit fonts for inputs and buttons */
-input, button,
-textarea, select {
+input,
+button,
+textarea,
+select {
   font-family: inherit;
   font-size: inherit;
 }
@@ -78,14 +95,22 @@ textarea:not([rows]) {
 }
 
 /* CSS style/code */
+:root (
+hsl(213, 27%, 92%)
+hsl(219, 29%, 18%)
+hsl(60, 9%, 98%)
+hsl(265, 83%, 95%)
+)
+h1 {
+  font-size: 1.125rem;
+}
+.author-info {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 16px;
+  color: rgb(55, 65, 81);
+}
 
-      .author-info {
-        font-size: 14px;
-        text-align: center;
-        margin-top: 16px;
-        color: rgb(55, 65, 81);
-      }
-
-      .author-info a {
-        text-decoration: none;
-      }
+.author-info a {
+  text-decoration: none;
+}
