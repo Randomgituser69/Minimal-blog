@@ -38,7 +38,12 @@ ol[role="list"] {
 
 /* Set core body defaults */
 body {
-  font-size: 0.875rem; /* Additional */
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  background-color: white;
+  font-size: 0.875rem;
   min-height: 100vh;
   line-height: 1.5;
 }
@@ -95,14 +100,44 @@ textarea:not([rows]) {
 }
 
 /* CSS style/code */
-:root (
-hsl(213, 27%, 92%)
-hsl(219, 29%, 18%)
-hsl(60, 9%, 98%)
-hsl(265, 83%, 95%)
-)
-h1 {
+:root {
+--light-silver: hsl(213, 27%, 92%);
+--really-black: hsl(219, 29%, 18%);
+--very-dark-gray: hsl(219, 17%, 27%);
+--lily: hsl(60, 9%, 98%);
+--grayish-pink: hsl(265, 83%, 95%);
+--purple: hsl(268, 86%, 52%);
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  max-width: 22.5rem;
+  padding: 2px 5px;
+  gap: 5px; 
+  margin-top: 3em;
+  align-items: start;
+  background-color: var(--lily);
+  box-shadow: 8px 8px 20px 0px rgba(85, 85, 85, 0.08);
+}
+.card img {
+  border-radius: 0.8rem;
+}
+.card p {
+  color: var(--very-dark-gray);
+}
+#author {
+  border: 1px solid var(--light-silver);
+}
+.card h1 {
   font-size: 1.125rem;
+  color: var(--really-black);
+}
+#topic {
+  background-color: var(--grayish-pink);
+  color: var(--purple);
+  padding: 0.8rem;
+  border-radius: 1rem;
 }
 .author-info {
   font-size: 14px;
